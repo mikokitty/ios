@@ -3,6 +3,7 @@
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,24 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx7-1v-Bfa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx7-1v-Bfa">
                                 <rect key="frame" x="168" y="436" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZp-qj-OWA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZp-qj-OWA">
                                 <rect key="frame" x="72" y="398" width="230" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7b-WB-EKK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7b-WB-EKK">
                                 <rect key="frame" x="72" y="335" width="230" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FZp-qj-OWA" firstAttribute="centerX" secondItem="Sx7-1v-Bfa" secondAttribute="centerX" id="7c0-UB-fGZ"/>
+                            <constraint firstItem="Sx7-1v-Bfa" firstAttribute="top" secondItem="FZp-qj-OWA" secondAttribute="bottom" constant="8" symbolic="YES" id="8Dd-pA-ncZ"/>
+                            <constraint firstItem="FZp-qj-OWA" firstAttribute="top" secondItem="n7b-WB-EKK" secondAttribute="bottom" constant="33" id="IZ0-8b-nQE"/>
+                            <constraint firstItem="n7b-WB-EKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="PIK-3z-KSU"/>
+                            <constraint firstItem="n7b-WB-EKK" firstAttribute="trailing" secondItem="FZp-qj-OWA" secondAttribute="trailing" id="Ukp-Vs-5cq"/>
+                            <constraint firstItem="FZp-qj-OWA" firstAttribute="leading" secondItem="n7b-WB-EKK" secondAttribute="leading" id="Ulw-No-lmH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sx7-1v-Bfa" secondAttribute="bottom" constant="201" id="nJ0-P0-R6U"/>
+                            <constraint firstItem="n7b-WB-EKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oTU-Qv-bBr"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
