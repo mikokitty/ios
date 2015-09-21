@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func animateTextField(up: Bool) {
         var aRect:CGRect = self.view.frame
-        let moveValue=CGFloat(15);
+        let moveValue=CGFloat(20);
         var movement = (up ? -moveValue:moveValue )
         if(aRect.size.height-kbHeight<textField.frame.height){
             var movement = (up ? -kbHeight : kbHeight)}
