@@ -186,7 +186,7 @@
         <!--View Controller-->
         <scene sceneID="zET-4P-Z2a">
             <objects>
-                <viewController id="coZ-iF-TtM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="coZ-iF-TtM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nfn-F2-652"/>
                         <viewControllerLayoutGuide type="bottom" id="xea-vV-VrB"/>
@@ -207,7 +207,7 @@
                     <navigationItem key="navigationItem" id="gQg-DY-aGn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginPage" id="wxw-pJ-jfv"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginView" id="wxw-pJ-jfv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPm-pS-ldm" userLabel="First Responder" sceneMemberID="firstResponder"/>

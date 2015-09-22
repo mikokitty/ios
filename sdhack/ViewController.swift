@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         textField.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,8 +77,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.performSegueWithIdentifier("LoginPage", sender: self);
+        self.performSegueWithIdentifier("LoginView", sender: self);
     }
-    
   
 }
