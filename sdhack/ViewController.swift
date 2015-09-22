@@ -74,5 +74,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
         UIView.commitAnimations()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("LoginPage", sender: self);
+    }
+    
   
 }
